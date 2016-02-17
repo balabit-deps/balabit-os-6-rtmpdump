@@ -1,3 +1,24 @@
+rtmpdump (2.4+20151223.gitfa8646d-1build1) xenial; urgency=medium
+
+  * No-change rebuild for gnutls transition.
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 17 Feb 2016 22:27:27 +0000
+
+rtmpdump (2.4+20151223.gitfa8646d-1) unstable; urgency=medium
+
+  * New upstream snapshot fixing potential integer overflow.
+  * debian/rules:
+    - Build with -Wl,--as-needed.
+    - Use include files from dpkg-dev for DEB_ variables.
+  * debian/control:
+    - Bump Standards-Version.
+    - Bump Priority to optional.
+    - Update Vcs-Browser.
+    - Add myself to Uploaders.
+    - Remove obsolete Pre-Depends.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 18 Jan 2016 21:53:02 +0100
+
 rtmpdump (2.4+20150115.gita107cef-1) unstable; urgency=medium
 
   * Team upload.
@@ -14,7 +35,7 @@ rtmpdump (2.4+20131018.git79459a2-5) unstable; urgency=medium
 
   * Team upload.
   * debian/control:
-    - Add missing libgmp-dev and zlib1g-dev to Build-Depens. They are pulled
+    - Add missing libgmp-dev and zlib1g-dev to Build-Depends. They are pulled
       in indirectly but are used in rtmpdump.
     - Add missing libgnutls28-dev and zlib1g-dev to librtmp-dev's Depends.
       They are needed by the pkg-config file. (Closes: #764133)
