@@ -1,3 +1,22 @@
+rtmpdump (2.4+20151223.gitfa8646d-1ubuntu0.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: denial of service in AMF3ReadString function
+    - debian/patches/CVE-2015-8270.patch: init str on unsupported
+      references in librtmp/amf.c.
+    - CVE-2015-8270
+  * SECURITY UPDATE: arbitrary code execution in AMF3CD_AddProp function
+    - debian/patches/CVE-2015-8271-1.patch: check for input buffer underrun
+      in librtmp/amf.c.
+    - debian/patches/CVE-2015-8271-2.patch: more input buffer checks in
+      librtmp/amf.c.
+    - CVE-2015-8271
+  * SECURITY UPDATE: denial of service via null pointer dereference
+    - debian/patches/CVE-2015-8272.patch: ignore requests without playpath
+      in rtmpsrv.c.
+    - CVE-2015-8272
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 05 May 2017 07:55:16 -0400
+
 rtmpdump (2.4+20151223.gitfa8646d-1build1) xenial; urgency=medium
 
   * No-change rebuild for gnutls transition.

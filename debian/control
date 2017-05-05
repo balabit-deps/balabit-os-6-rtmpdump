@@ -1,6 +1,7 @@
 Source: rtmpdump
 Priority: optional
-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Uploaders: Reinhard Tartler <siretart@tauware.de>,
            Sebastian Dröge <slomo@debian.org>,
            Sebastian Ramacher <sramacher@debian.org>

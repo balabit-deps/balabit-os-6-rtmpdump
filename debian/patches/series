@@ -1,3 +1,7 @@
 01_unbreak_makefile.diff
 02_gnutls_requires.private.diff
 03_suppress_warning.diff
+CVE-2015-8270.patch
+CVE-2015-8271-1.patch
+CVE-2015-8271-2.patch
+CVE-2015-8272.patch
